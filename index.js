@@ -1,17 +1,17 @@
-import { InteroperabilityVisualization } from '@lbhattac/interoperability-viz';
+import { createVisualization, selectCountry, hideDataTable } from '@lbhattac/interoperability-viz';
 
 const data = JSON.parse(require('./data.json'));
 
-InteroperabilityVisualization({
+const options = {
     visId: 'visContainer',
     data: data,
-    numIncrements: 5,
+    numIncrements: 4,
     minSimilarity: 0,
     maxSimilarity: 1,
     digitsRounded: 2,
     colorScheme: 'schemeBlues',
-    defaultMode: 'worldMap',
-    enabledModes: ['worldMap', 'force'],
+    defaultMode: 'force',
+    enabledModes: ['force', 'worldMap'],
     tableProperties: ['similarity'],
     showTable: true,
     worldMapProperties: {
@@ -29,4 +29,10 @@ InteroperabilityVisualization({
         linkMultiplier: 3,
         interactive: true,
     },
-});
+};
+
+createVisualization(options);
+
+selectCountry("Turkey", options);
+
+hideDataTable(options);

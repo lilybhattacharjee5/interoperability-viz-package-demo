@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/lilybhattacharjee5/interoperability-demo#readme",
   "dependencies": {
-    "@lbhattac/interoperability-viz": "^1.0.8",
+    "@lbhattac/interoperability-viz": "^1.0.13",
     "connect": "^3.7.0",
     "css-loader": "^4.3.0",
     "d3": "^3.5.17",

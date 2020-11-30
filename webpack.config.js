@@ -20,5 +20,11 @@ module.exports = {
 			},
 		],
 	},
-	target: 'web',
+	target: 'node',
+	externals: {
+		"fs": "require('fs')",
+	}
+	// node: {
+	// 	fs: 'empty',
+	// }
 }
