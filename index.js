@@ -5,7 +5,7 @@ import {
     changeLayer, 
     disableLayering,
     disableInteractive
-} from '@lbhattac/interoperability-viz';
+} from 'polisci-vis';
 
 const data = JSON.parse(require('./data.json'));
 
