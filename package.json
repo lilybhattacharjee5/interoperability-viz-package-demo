@@ -26,7 +26,7 @@
     "html-webpack-plugin": "^4.5.1",
     "jquery": "^3.5.1",
     "json-loader": "^0.5.7",
-    "polisci-vis": "^1.0.0",
+    "polisci-vis": "^1.0.2",
     "serve": "^11.3.2",
     "serve-static": "^1.14.1",
     "server": "^1.0.31",
